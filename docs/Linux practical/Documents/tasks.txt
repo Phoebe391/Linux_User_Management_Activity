@@ -1,0 +1,4 @@
+Linux provides a flexible environment for managing files and directories.
+Each directory can contain multiple files and subdirectories.
+Proper organization makes navigation and file management easier.
+This document serves as a sample text file for practical exercises.

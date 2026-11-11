@@ -1,0 +1,33 @@
+name: Structure check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Required files and folders exist
+        run: |
+          missing=0
+          for p in README.md docs/EVIDENCE_LOG.md docs/REFLECTION.md docs/SUBMISSION_CHECKLIST.md \
+                   screenshots linux-practical/config linux-practical/documents \
+                   linux-practical/backups linux-practical/evidence scripts/verify_practical.sh; do
+            if [ -e "$p" ]; then echo "ok   $p"; else echo "MISSING $p"; missing=1; fi
+          done
+          exit $missing
+
+      - name: Shell script syntax
+        run: |
+          bash -n scripts/verify_practical.sh
+          bash -n scripts/collect_evidence.sh
+
+      - name: Warn if passwords may be committed
+        run: |
+          if grep -rniE 'password\s*[:=]\s*\S+' docs linux-practical --include='*.md' --include='*.txt' --include='*.conf'; then
+            echo "::warning::Possible password found - review and redact."
+          fi

@@ -1,0 +1,7 @@
+total 24
+drwxrwxr-x 6 user01 user01 4096 Nov 10 04:41 .
+drwx------ 7 user01 user01 4096 Nov 10 06:19 ..
+drwxrwxr-x 2 user01 user01 4096 Nov 10 05:48 backups
+drwxrwxr-x 2 user01 user01 4096 Nov 10 06:57 config
+drwxrwxr-x 2 user01 user01 4096 Nov 10 05:56 documents
+drwxrwxr-x 2 user01 user01 4096 Nov 10 04:41 evidence

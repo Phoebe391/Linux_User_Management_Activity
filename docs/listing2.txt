@@ -1,0 +1,4 @@
+total 24
+-rw-rw-r-- 1 user01 user01 18094 Nov  9 06:28 etc-content
+-rw-rw-r-- 1 user01 user01    25 Nov  9 06:34 listing1.txt
+-rw-rw-r-- 1 user01 user01     0 Nov  9 06:34 listing2.txt

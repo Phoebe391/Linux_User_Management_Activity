@@ -1,0 +1,13 @@
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.vscode/
+.idea/
+
+# Never commit secrets
+*.pem
+*.key
+.env
+passwords*.txt

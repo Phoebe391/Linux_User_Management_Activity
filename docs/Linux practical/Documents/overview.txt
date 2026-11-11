@@ -1,0 +1,4 @@
+This directory contains temporary files used for testing and system administration.
+Files stored here are organized for easy access and identification.
+Regular checks should be performed to ensure everything remains in order.
+This file was created as part of a Linux file management practical.
